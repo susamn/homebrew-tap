@@ -14,7 +14,29 @@ brew install susamn/tap/<tool>
 |---|---|---|
 | [mpdtui](https://github.com/susamn/mpdtui) | `brew install susamn/tap/mpdtui` | cask |
 | [lshwtui](https://github.com/susamn/lshwtui) | `brew install susamn/tap/lshwtui` | cask |
+| [flashtui](https://github.com/susamn/flashtui) | `brew install susamn/tap/flashtui` | cask (Linux amd64/arm64) |
 | [uff](https://github.com/susamn/uff) | `brew install susamn/tap/uff` | formula |
+
+## flashtui
+
+A terminal UI for writing OS images to removable drives. Install the
+[Linux runtime requirements](https://github.com/susamn/flashtui#requirements)
+with your distribution's package manager first, including udisks2, polkit,
+util-linux, parted and udev. Do not substitute Homebrew's util-linux.
+Image decompression is built in; a password hasher is needed only for
+password-based headless setup.
+
+```sh
+brew install susamn/tap/flashtui
+flashtui -version
+flashtui -dir ~/Downloads
+```
+
+Run as your normal user in an interactive terminal, not with `sudo`.
+udisks2 needs the system D-Bus, and drive permissions depend on session policy.
+This package is Linux-only; no macOS binary is published.
+
+To update: `brew update && brew upgrade susamn/tap/flashtui`.
 
 ## Layout
 
