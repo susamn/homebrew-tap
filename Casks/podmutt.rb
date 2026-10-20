@@ -4,21 +4,21 @@ cask "podmutt" do
 
   on_macos do
     on_arm do
-      sha256 "aaedbd74cc2b970c99012d73fba879902d293d1d79b6659bef6dc15a844f8b51"
+      sha256 "4ee7b50a7fd1e5d05d8cb7ec8c12f48605a24bf0f184b84bf2508a9efa760ffb"
       url "https://github.com/susamn/podmutt/releases/download/v#{version}/podmutt_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9c1d758bf96a8f446b6df51ef5e16d0c6512b72d7a82dc96d8b1af64e1966361"
+      sha256 "d78d0b5105d13740802f7e6b52fa9f7b959b5b52463c6921e2cf840ebc01af03"
       url "https://github.com/susamn/podmutt/releases/download/v#{version}/podmutt_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "de3d96dce6ce583f74a5c6f089b8e44783268f05f4c60015553da8d3ad72d060"
+      sha256 "44488e77680f41ec10aaccc3f8b5f434a4912b10c1678bffe4d52513a724af4d"
       url "https://github.com/susamn/podmutt/releases/download/v#{version}/podmutt_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f720915e3e1b2084d6a976dd974124040468e8598a047b691a5a317fff71d072"
+      sha256 "45b099ec768944d429ab97c14def3fea3f6637db60fead5e5c5454c928e57d87"
       url "https://github.com/susamn/podmutt/releases/download/v#{version}/podmutt_#{version}_linux_amd64.tar.gz"
     end
   end
